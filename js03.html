@@ -1,0 +1,84 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        //   var cities=["Karachi","Islamabad","Lahore","Peshawre","Quetta"];
+        //   alert(cities[0]);
+        //   alert("Welcome to "+ cities[3]);
+
+        // var mixedArray=[1,"Now ","get",true];
+        // alert(mixedArray[3]);
+
+        // var fruits=[];
+        // fruits[0]="Mango";
+        // fruits[1]="Apple";
+        // fruits[3]="Banana";
+        // alert(fruits[3]);
+        // alert(fruits[2]);
+        
+          var cntry=["Pakistan","China","Japan","UAE","Iran"];
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          cntry.pop();
+          console.log("=================");
+          console.log("After Pop");
+          console.log("=================");
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("After Push");
+          console.log("=================");
+          cntry.push("Saudia Arabia","Kuwait");
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("After Shift");
+          console.log("=================");
+          cntry.shift();
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("After Unshift");
+          console.log("=================");
+          cntry.unshift("Indonesia","Pakistan");
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("After Splice");
+          console.log("=================");
+          cntry.splice(2,2,"Iraq","Iran","Afghanistan","Turkey");
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("After Splice without removing");
+          console.log("=================");
+          cntry.splice(1,0,"China","Japan","Germany");
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+          console.log("=================");
+          console.log("removing through splice");
+          console.log("=================");
+          cntry.splice(2,2);
+          for(var i=0; i<cntry.length; i++){
+                console.log(cntry[i]);
+          }
+
+          console.log("=================");
+          console.log("Using Slice");
+          console.log("=================");
+          var nnmc=[];
+          nnmc=cntry.slice(1,3);
+          for(var i=0; i<nnmc.length; i++){
+                console.log(nnmc[i]);
+          }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        height: 600px;
+        width: 500px;
+    }
+    div{
+        height: 600px;
+        width: 500px;
+        background-color: bisque
+    }
+    </style>
+</head>
+<body>
+    <script>
+    // function popUp(message){
+    //     alert(message);
+    // }
+
+    function afterImg() {
+        document.getElementById('as').src="C:\Users\Muhammad\Pictures\c.jpg";
+    }
+//     function checkAddress(fieldId) {
+//  if (document.getElementById(fieldId).value === "") {
+//  alert("Email address required.");
+//  }
+//}
+    </script>
+    <img id="as" src="C:\Users\Muhammad\Pictures\a.jpg" onmouseover="afterImg()" >
+    <!-- <a href="#" onclick="alert('Welcome')">click</a>    -->
+   <!-- <a href="Javascript:void(0)" onClick="alert('Hi Welcome this void')">Click</a>  -->
+   <!-- <a href="Javascript:void(0)" onclick="var greet='Good Morning'; alert(greet)">Click Here</a> -->
+   <!-- <a href="#" onclick="popUp('Welcome to Javascript')">Click me</a> -->
+   <!-- <input type="button" value="Hey Click here" onclick="alert('Welocome to button message')"> -->
+  <!--  <img src="C:\Users\Muhammad\Pictures\Capture1.png" onclick="alert('Welcome')"> -->
+  <!-- <input type="button" value="Click Here" onclick="alert('Hello World')"; -->
+  <!-- <img src="C:\Users\Muhammad\Pictures\c.jpg" onMouseover='src="C:\Users\Muhammad\Pictures\b.jpg"' > -->
+  <!-- <h1 onMouseover="alert('Your name is Muhammad Siraj')" >What is My Name</h1> -->
+  <!-- <div onmouseover="this.style.backgroundColor='aqua';" onmouseout="this.style.backgroundColor='bisque';" >Some people have curly</div> -->
+  <!-- <input type="text" name="name" placeholder="Enter Name" onfocus="this.style.backgroundColor='red';"/> -->
+  <!-- <input type="text" name="name"  onfocus="this.style.backgroundColor='red';" onblur="this.style.backgroundColor='grey';"/> -->
+  <!-- <form onSubmit="checkAddress('email');">
+    Email:
+    <input type="text" id="email">
+    <input type="submit" value="Submit">
+    </form> -->
+</body>
+</html>

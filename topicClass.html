@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class polygone{
+        //     constructor(height,width){
+        //         this.h=height;
+        //         this.w=width;
+
+        //     }
+        //      abc() {
+        //         console.log(this.h);
+        //         console.log(this.w);
+                
+        //     }
+
+        // }
+        // var poly=new polygone(17,120);
+        // poly.abc();
+
+        //Static functions
+    //     class myStaticClass{
+    //         static msg(){console.log("Hello World message")};
+    //     }
+    //    myStaticClass.msg();
+
+    //use of inheritence
+class Shape { 
+   constructor(a) { 
+      this.Area = a
+   } 
+} 
+class Circle extends Shape { 
+   disp() { 
+      console.log("Area of the circle:  "+this.Area) 
+   } 
+} 
+var obj = new Circle(223); 
+obj.disp() 
+    </script>  
+</body>
+</html>

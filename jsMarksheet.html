@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>MarkSheet</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th{
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            border-bottom: 2px solid black;
+            border-top: 2px solid grey;
+
+        }
+        tr.even{
+            background-color:rgb(174, 202, 255);
+        }
+        tr.odd{
+            background-color:rgb(100, 171, 173);
+        }
+        td:hover{
+            background-color: rgb(161, 161, 172);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var fstnme=prompt('Enter Your Name').toUpperCase();
+        var eng=Number(prompt('Enter your English marks'));
+        var urd=Number(prompt('Enter you Urdu marks'));
+        var math=Number(prompt('Enter your Math marks'));
+        var phy=Number(prompt('Enter your Physics marks'));
+        var Isl=Number(prompt('Enter your Islamiate marks'));
+       var total=eng+urd+phy+math+Isl;
+        console.log(fstnme);
+        console.log("ENGLISH "+eng);
+        console.log("MATH "+math);
+        console.log("PHYSICS "+phy);
+        console.log("ISLAMIATE "+Isl);
+        console.log("URDU "+urd);
+        console.log("TOTAL "+total);
+        //document.getElementById("12").innerHTML=fstnme;
+      
+    </script>
+    <table>
+        <tr >
+            <th>Name</th>
+            <th>English</th>
+            <th>Urdu</th>
+            <th>Math</th>
+            <th>Physics</th>
+            <th>Islamiate</th>
+        </tr>
+        <tr class="odd">
+            <td id="12"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr class="even">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+        </tr>
+        <tr class="odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr class="even">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="odd">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    </table>
+</body>
+</html>

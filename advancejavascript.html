@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advance Javascript Document</title>
+</head>
+<body>
+    <script>
+     //Arrow Functions 
+    //=============================================================
+    // let myfunc=name => console.log("My name is "+name);
+    // myfunc("Siraj"); 
+
+    // const newFunc= ()=>console.log("My name is Muhammad Siraj and i am aweb app developer");
+    // newFunc();
+
+    // let greetings=(greet,name)=>"hello "+greet+" "+name;
+    // console.log(greetings("GoodEvening","MuhammadSiraj"));
+
+    //Conditional terneray operator
+    //=============================================================
+    //const gender="female";
+    // gender==="male"
+    // ? console.log("Blue")
+    // : console.log("Pink");
+
+    //const gender="female";
+    // gender==="male"
+    // ?console.log("Blue")
+    // :gender==="female"
+    // ?console.log("pink")
+    // :console.log("Purple");
+
+    //Tempelate literal
+    //===============================================================
+    // let name='Siraj';
+    // let course='javascript';
+    // var para=`My name is ${name} and i am teaching ${course}`;
+    // console.log(para);
+
+    //==============================================================
+    //class Concept
+//     class msag{
+//         static country="Pakistan";
+//         constructor(para1,para2){
+//             this.country=false;
+//             this.fname=para1;
+//             this.lname=para2;
+//         }
+//         printmsg()
+//         {
+//             console.log(`Welcome ${this.fname} ${this.lname} ${this.country}`);
+//             this.country=true;
+//             console.log(`Welcome ${this.fname} ${this.lname} ${this.country}`);
+//         }
+//     }
+//     class newmsg extends msag{
+//         constructor(fname,lname,city,country){
+//             super(fname,lname);
+//             this.city = city
+//             this.country = country
+//         }
+//         printNewMsg() {
+//         console.log(`Welcome ${this.fname} ${this.lname} and ${this.city}, ${this.country}`)
+//     }
+//     }
+//     let abc=new msag("Muhammad","Siraj");
+//     abc.printmsg();
+//     let xyz=new msag("Abdul","Karim");
+//     xyz.printmsg();
+//     console.log(msag.country,abc.country);
+//     const newAbc = new newmsg("Zia", "Khan", "karachi", "pakistan")
+//   //  newAbc.printMsg()
+//     newAbc.printNewMsg()
+
+//Local Storage
+//===================================================
+//   localStorage.setItem("fname","Muhammad");
+//   localStorage.setItem("lname","Siraj");
+//   localStorage.setItem("a","Shoaib");
+//   localStorage.setItem("b","karim");
+//   var name=localStorage.getItem("a")
+//   console.log(name);
+//   localStorage.removeItem("a");
+//   localStorage.getItem("a");
+//   console.log(localStorage.length);
+//   localStorage.clear();
+
+//RestOperator
+//===================================================
+// let{a,b,...z}={a:1,b:2,c:4,d:5,e:55};
+// console.log(z);
+
+//for in loop
+//====================================================
+//var myobj={name:"Siraj",fname:"KArim"}
+// for (const i in myobj) {
+//     console.log(myobj[i]);
+// }
+// for (const i in myobj) {
+//     console.log(i);
+// }
+
+//for of loop
+//====================================================
+// const name="MuhammadSiraj";
+// for (const i of name) {
+//     console.log(i);
+// }
+
+//destructuring
+//====================================================
+// let myarr=[61917,"MuhammadSiraj","Abdulkarim"];
+// let [id,name,fname]=myarr;
+// console.log(id);
+// console.log(name);
+// console.log(fname);
+
+//object Assign
+//============================
+// let obj1 = { fname: "Aamir" }
+// let obj2 = { lname: "Pinger" }
+// console.log(obj1);
+// console.log(obj2);
+// let newobj=Object.assign({},obj1,obj2);
+// console.log(newobj);
+
+
+/************************************************** */
+
+
+// let obj1 = {
+//     fname: "Irfan",
+//     lname: "Ali",
+//     degrees: 2,
+// }
+// let obj2 = {
+//     city: "Karachi",
+//     country: "Pakistan",
+//     gender: "male",
+// }
+// let obj3 = {
+//     fname: "Aamir",
+//     lname: "Pinger",
+// }
+
+// let newobj=Object.assign(obj1,obj2,obj3);
+// console.log(newobj);
+
+/************************************************** */
+// let obj2 = {
+//     city: "Karachi",
+//     country: "Pakistan",
+//     gender: "male",
+// }
+// console.log(Object.keys(obj2));
+// console.log(Object.values(obj2));
+
+//OBJECT LITERAL SHORTHAND
+
+
+// const firstName = "Aamir"
+// let lastName = "Pinger"
+// var degrees = 2
+
+// let obj={
+//     firstName:firstName,
+//     lastName:lastName,
+//     degrees:degrees
+// }
+// console.log(obj);
+//**************************************
+// let obj2={
+//     firstName,
+//     lastName,
+//     degrees
+// }
+// console.log(obj2);
+
+sessionStorage.setItem("Name","MuhammadSiraj");
+sessionStorage.setItem("Age","21");
+var a=sessionStorage.getItem("Name");
+//console.log(a);
+sessionStorage.removeItem("Name");
+console.log(sessionStorage.getItem("Name"));
+</script>
+</body>
+</html>
